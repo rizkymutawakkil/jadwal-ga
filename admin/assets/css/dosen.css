@@ -1,0 +1,44 @@
+/* Custom styles for view modal */
+.swal-wide {
+    max-width: 600px !important;
+}
+
+.swal2-popup {
+    font-size: 0.9rem !important;
+}
+
+.swal2-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.swal2-html-container {
+    margin: 0 !important;
+}
+
+.swal2-close {
+    font-size: 1.5rem !important;
+    color: #6c757d !important;
+}
+
+.swal2-close:hover {
+    color: #343a40 !important;
+}
+
+.table th {
+    font-weight: 600 !important;
+}
+
+.badge {
+    font-size: 0.85rem !important;
+    padding: 0.5em 0.75em !important;
+}
+
+.table td, .table th {
+    padding: 0.75rem !important;
+    vertical-align: middle !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0,0,0,.02) !important;
+} 

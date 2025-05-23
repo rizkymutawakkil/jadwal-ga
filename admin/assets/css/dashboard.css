@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+    --primary-color: #f8f9fa;
+    --secondary-color: #e9ecef;
+    --accent-color: #6c757d;
+    --text-color: #495057;
+    --hover-color: rgba(108, 117, 125, 0.1);
+    --active-color: rgba(33, 37, 41, 0.1);
+    --divider-color: rgba(108, 117, 125, 0.1);
+    --shadow-color: rgba(0, 0, 0, 0.05);
+    --active-text-color: #212529;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+.welcome-card {
+    background: var(--primary-color);
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+}
+
+.welcome-card h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    color: var(--active-text-color);
+}
+
+.welcome-card p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    font-weight: 600;
+}
+
+.stat-card {
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 2rem 0 var(--shadow-color);
+    background: var(--accent-color);
+}
+
+.stat-card:hover .stat-value,
+.stat-card:hover .stat-label,
+.stat-card:hover .stat-icon {
+    color: var(--primary-color);
+}
+
+.stat-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--active-text-color);
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+.stat-card:hover .stat-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--active-text-color);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: var(--secondary-color);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+}
+
+.action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 2rem 0 var(--shadow-color);
+    background: var(--accent-color);
+}
+
+.action-btn:hover i,
+.action-btn:hover span {
+    color: var(--primary-color);
+}
+
+.action-btn i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--active-text-color);
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+.action-btn span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.stats-item {
+    padding: 1rem;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.stats-item:last-child {
+    border-bottom: none;
+}
+
+.stats-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 2rem;
+    text-align: center;
+    color: var(--active-text-color);
+    opacity: 0.9;
+    transition: all 0.2s ease;
+}
+
+.stats-item:hover i {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.progress {
+    height: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: var(--secondary-color);
+}
+
+.progress-bar {
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    background: var(--accent-color);
+}
+
+/* Style untuk membuat card memiliki tinggi yang sama */
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row.equal-height .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary-color);
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 var(--shadow-color);
+}
+
+.row.equal-height .card-body {
+    flex: 1;
+}
+
+.card-header {
+    background: var(--secondary-color);
+    border-bottom: 1px solid var(--divider-color);
+    font-weight: 700;
+    color: var(--active-text-color);
+} 
